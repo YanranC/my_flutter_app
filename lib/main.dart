@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: '20211120051',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: '20211120051蔡嫣然'),
     );
   }
 }
@@ -101,6 +101,25 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              "Hello world " * 6, //字符串重复六次
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              "Hello world",
+              style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 18.0,
+                  height: 1.2,
+                  fontFamily: "Courier",
+                  background: Paint()..color = Colors.yellow,
+                  decoration: TextDecoration.underline,
+                  decorationStyle: TextDecorationStyle.dashed),
+            ),
+            ElevatedButton(
+                  child: Text("normal"),
+                  onPressed: () {},
             ),
           ],
         ),
